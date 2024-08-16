@@ -1,14 +1,14 @@
 :root {
     /** colours **/
-    --yellow:           #FED766; 
+    --yellow: #FED766;
     --lt-seafoam-green: #ecf9f6;
-    --seafoam-green:    #43C6AC;
-    --md-blue:          #191654;
-    --dk-blue:          #0C0B2A;
-    --blue-grey:        #6B717E;
+    --seafoam-green: #43C6AC;
+    --md-blue: #191654;
+    --dk-blue: #0C0B2A;
+    --blue-grey: #6B717E;
 
     /** typography **/
-    --headings:'Monoton', cursive;
+    --headings: 'Monoton', cursive;
     --body: 'Rubik', sans-serif;
 }
 
@@ -19,4 +19,458 @@
     width: 0.1rem;
     height: 0.1rem;
     visibility: hidden;
+}
+
+
+/** typography **/
+body {
+    font-family: var(--body);
+    font-size: 1rem;
+}
+.container{
+   
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: var(--headings);
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--md-blue);
+}
+
+hr{
+    width: 250px;
+    margin: 0;
+}
+
+.blugreen {
+    background: var(--dk-blue);
+    background: linear-gradient(90deg, var(--dk-blue) 0%, var(--md-blue) 35%, var(--seafoam-green) 100%);
+    color: var(--lt-seafoam-green);
+    padding-bottom: 4rem;
+}
+
+.blugreen h2 {
+    color: var(--lt-seafoam-green);
+    padding-top: 4rem;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.blugreen p {
+    padding-bottom: 1.8rem;
+}
+.blugreen .button{
+ margin: 1rem 0;
+}
+
+.whowework {
+    background-color: var(--seafoam-green);
+}
+
+footer {
+    background-color: var(--md-blue);
+    color: var(--lt-seafoam-green);
+}
+
+
+/* botton */
+
+.click-trans,
+.click {
+    text-transform: uppercase;
+    width: 300px;
+}
+.click img, .click-trans img{
+    margin-left: 1rem;
+    width: 1.4rem;
+}
+.click {
+    align-items: center;
+    background-color: var(--seafoam-green);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    color: var(--md-blue);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.click:hover,
+.click:focus {
+    border-color: var(--dk-blue);
+    box-shadow: var(--md-blue) 0 4px 12px;
+    color: var(--dk-blue);
+}
+
+.click:hover {
+    transform: translateY(-1px);
+}
+
+.click:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.click-trans {
+    background-color: transparent;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    color: var(--seafoam-green);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+
+.click-trans:hover,
+.click-trans:focus {
+    border-color: var(--seafoam-green);
+    box-shadow: var(--seafoam-green) 0 4px 12px;
+    color: var(--md-blue);
+}
+
+.click-trans:hover {
+    transform: translateY(-1px);
+}
+
+.click-trans:active {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.whowework 
+.click-trans {
+    color: var(--md-blue);
+    margin: 2.3rem 0;
+}
+
+.laptop h2{
+    font-size: 2.1rem;
+}
+.laptop button, .laptop p{
+    margin-top: 1.3rem;
+}
+.laptop h3{
+    margin: .5rem 0;
+    font-family: var(--body);
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: var(--seafoam-green);
+}
+.style{
+    margin: 3rem 0;
+}
+.style p{
+    margin: 0;
+}
+
+.ourwork h2{
+    padding-top: 4rem;
+    font-size: 2.1rem;
+    font-weight: 300;
+}
+
+.ourwork p{
+    padding-top: .4rem;
+}
+
+
+.ourwork hr{
+    background-color: var(--seafoam-green);
+    color: #43C6AC;
+    position: absolute;
+    margin: 0;
+}
+
+/* scroll */
+.scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 5rem;
+    overflow-x: scroll;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+    box-shadow: 3px 3px 3px #eee;
+    flex: 0 0 24rem;
+    margin: 2rem 1rem;
+}
+
+.card img {
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.card-body {
+    text-align: center;
+    border-radius: .25rem;
+}
+
+/* This is for webkit browsers only */
+.scroll-wrapper::-webkit-scrollbar {
+    background-color: #eee;
+    width: 0.5rem;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: #444;
+}
+
+/* As of 2022, this is for Firefox only */
+
+.scroll-wrapper {
+    scrollbar-color: #444 #eee;
+    scrollbar-width: thin;
+}
+
+
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    display: block;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 3px #e8e8e8;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 300px;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+
+label[for="accept"] {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    width: auto;
+    border: none;
+    background: #fff;
+    box-shadow: none;
+    transition: padding-left 1s ease;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    color: #DC413E;
+    padding-left: 20px;
+}
+
+
+.inner-container {
+    margin: auto;
+    max-width: 40rem;
+    padding: 2rem 1rem;
+}
+
+/* Let's hide our menu indicators in the mobile view. */
+.first-link img,
+a span {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    background-color: var(--dk-navy);
+}
+
+.show-nav {
+    max-height: unset;
+    overflow: visible;
+    border-bottom: 1px solid #fff;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--dk-blue);
+    border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 57rem) {
+    .wide-flex {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    header div.inner-container {
+        max-width: 60rem;
+    }
+
+    header div.inner-container>.flex-container {
+        flex: 1 0 auto;
+    }
+
+    .toggle-btn {
+        display: none;
+    }
+
+    .first-link img,
+    a span {
+        display: unset;
+    }
+
+    nav {
+        justify-content: flex-end;
+        position: static;
+        overflow: visible;
+        white-space: nowrap;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+    .members {
+        border-top: none;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .members li {
+        margin: 0 0.75rem;
+    }
+
+    .members li:last-of-type {
+        margin-right: 3rem;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .main-menu li {
+        position: relative;
+    }
+
+    .main-menu>li {
+        margin: 1rem;
+    }
+
+    .second-tier,
+    .third-tier {
+        min-width: 100%;
+        background-color: var(--dk-navy);
+        padding: 1rem;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .main-menu li:hover>.second-tier,
+    .second-tier li:hover>.third-tier {
+        visibility: visible;
+    }
+
+    .second-tier {
+        left: 0;
+        text-align: right;
+    }
+
+    .third-tier {
+        left: 100%;
+        text-align: left;
+        top: -1.5rem;
+    }
+}
+/* 
+.card:nth-child(2n+1):last-child {
+    color:green;
+  } */
+
+
+footer img{
+
+}
+.change-my-color{
+    fill: var(--lt-seafoam-green);   
+    width: 2rem;
+}
+
+footer .last{
+    background-color: var(--dk-blue);
+    display: flex;
+    flex-direction: column;
+}
+footer .flex{
+    display: flex;
+    flex-direction: row;
 }
